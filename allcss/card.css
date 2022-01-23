@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Lora&family=Nunito+Sans:wght@600&family=Open+Sans+Condensed:wght@700&family=Source+Sans+Pro:ital,wght@0,400;1,600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+font-family: 'Hind', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+margin:1rem  3rem;
+
+}
+.card-container
+{
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.card
+{
+    height: 200px;
+    width:350px;
+}
+/* horizontal card */
+.paragraph.para-none
+{
+    display: none;
+}
+
+.card-content
+{
+    padding: 1rem;
+}
+.card-outline
+{
+    border: 2px solid white; 
+    box-shadow: 2px 2px 4px rgb(194, 191, 191);
+}
+.card-first-square 
+{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+.card-first-square:hover
+{
+    background-color: rgb(250, 246, 246); 
+}
+.card-image img
+{
+    display: block;
+    /* justify-content: flex-start; */
+    height:20vh;
+    width:140px;
+    border-radius: 2px;
+}
+
+.card-details
+{
+   display: flex;
+   flex-direction: column;
+   
+}
+.card-title
+{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.card-subtitle
+{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.card-para
+{
+    font-size: 14px;
+
+}
+.pt-05
+{
+    padding:0.2rem
+}
+.font-gray
+{
+    color: gray;
+}
+.card-action
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mt-01
+{
+    margin-top:1.5rem ;
+}
+.action-button
+{
+    margin: 10px;
+}
+.ml-01
+{
+    margin-left: 1rem;
+}
+.btn
+{
+    font-size: 1rem;
+    max-width:140px;
+    font-weight: 600;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary
+{
+    color:rgb(104, 12, 170);
+    border:0; 
+}
+.btn-secondary
+{
+    color:rgb(44, 41, 204);
+    border:none; 
+}
+
+.icon-button
+{
+    width:10rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.34rem;
+    color:rgb(146, 139, 139);
+    
+}
+.action-icons
+{   font-size: 1.34rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:10rem;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    background-color: rgb(250, 246, 246);
+}
+
+/* BASIC CARD DESIGN STARTS HERE */
+ .card-lg
+{
+    height:380px;
+    width:350px;
+    border-radius:10px;
+}
+.card-image-lg img{
+    height:190px;
+    width:100%;
+    border-radius: 5px;
+   
+}
+.card-content-col
+{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+.mt-02
+{
+    margin-top: 0.8rem;
+}
+/* third card  TEXT ON IMAGE*/
+.card-md
+{
+   height:350px;
+   width:350px;
+}
+.card-detail-on-img{
+  top:140px;
+  position: absolute;
+}
+.card.card-md.card-outline.card-position
+{
+    position: relative;
+}
+.font-white
+{
+    color: rgb(211, 207, 207);
+}
+/*  FOURTHCARD  WITH HEADER*/
+.ml-0p5
+{
+    margin-left: 0.5rem;
+}
+ .card-image-lg.image-wradius img{
+     border-radius: 0px;
+ }
+/* card with only icons */
+.card-action-position
+{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.action-icons .icon-fixed
+{
+    position: fixed;
+}
+.card-reverse 
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.action-button-none
+{
+    display:none;
+}
+/* card with only buttons */
+.action-icon-none
+{
+    display: none;
+}
+/* card with upper header */
+.card-upper-header
+{
+    display:flex;
+    flex-direction: column-reverse;
+}
+.card-upper-header .paragraph:nth-child(3)
+{
+    order:1; 
+}
+.card-upper-header .card-image-lg:nth-child(1)
+{
+    order:2;
+}
+.card-upper-header .card-details
+{
+    order:3;
+}
