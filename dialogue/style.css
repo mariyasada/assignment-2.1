@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Lora&family=Nunito+Sans:wght@600&family=Open+Sans+Condensed:wght@700&family=Source+Sans+Pro:ital,wght@0,400;1,600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+font-family: 'Hind', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+margin:2rem  8rem;
+}
+
+:root{
+    --container-bg:rgb(247, 247, 183);
+    --hedaer-color:rgb(59, 59, 240);
+}
+.dialogue-container
+{
+    max-width:55rem;
+    height:80vh;
+    /* background-color:var(--container-bg) ; */
+}
+.dialogue-card
+{
+    height:17rem;
+    width:18rem;
+    background-color: white;
+    margin:auto;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+.card-outline
+{
+    border:2px solid rgb(247, 244, 244);
+    box-shadow: 2px 3px 5px gray;
+}
+.ml-01
+{
+    margin-left: 1rem;
+}
+.mt-01
+{
+    margin-top: 1rem;
+}
+.di-header
+{
+    font-size: 1.8rem;
+    color:var(--hedaer-color);
+    font-weight: 500;
+    text-align: center;
+}
+.di-description
+{
+    font-size: 1rem;
+    color:black;
+    opacity: 0.7;
+}
+.dialogue-btn
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.mt-3p5
+{
+    margin-top: 3.5rem;
+}
+.btn
+{
+    font-size: 1rem;
+    padding:0.5rem;
+    border:none;
+    background: transparent;
+    color:var(--hedaer-color);
+    font-weight: 700;
+}
+/* second dialogue box css starts */
+.dialogue-card.dialogue-card-lg
+{
+    height:26rem;
+    max-width: 300px;
+    
+}
+.mt-02
+{
+    margin-top: 2rem;
+}
+.option-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.option-list li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+    
+}
+input[type=radio] {
+    width: 17px;
+    height: 17px;
+    margin-right: 20px;
+} 
+   .list{
+   display: flex;
+   gap:20px;
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin-left: 20px;
+   
+   }
+    
+
+.padd-1
+{
+    padding: 1rem;
+}
+/* third dialogue box */
+.decrp-none
+{
+    display: none;
+}
+
+.circle-detail
+{
+    font-size: 1.2rem;
+    margin-left: 20px;
+    color: var(--hedaer-color);
+    position: absolute;
+    left:30px;
+    color: rgb(121, 116, 116);
+}
+.circle{
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   background-image: url(/Cards/card1/allcards/image/river.jpg);
+   position: relative;
+}
+ li .circle-2
+{
+    background-image: url(https://picsum.photos/100);
+}
+.display
+{
+    color:red;
+    left:20px;
+    position: fixed;
+    display: none;
+}
