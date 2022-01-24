@@ -143,7 +143,7 @@ input[type=radio] {
    height: 30px;
    width: 30px;
    border-radius: 50%;
-   background-image: url(/Cards/card1/allcards/image/river.jpg);
+   background-image: url(/card/image/river.jpg);
    position: relative;
 }
  li .circle-2
