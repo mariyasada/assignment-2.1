@@ -12,9 +12,9 @@
     <div class="container mt-2">
         <p class="txt"> hello everyone.................</p>
 
-        <div class="text-content text-absolute ml-2">
+        <div class="text-content text-absolute ml-2" id="hide-snack">
             <p class="text ml-2">Can't send photo. Retry in 5 seconds.</p>
-            <button class="btn">Retry</button>
+            <button class="btn" id="btn-retry">Retry</button>
             <i class="fas fa-times"></i>
         </div>
 
@@ -50,5 +50,30 @@ Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones n
     
 </p>
 </div>
+
+<script>
+    const textAbsoluteSnack = document.querySelector("#hide-snack");
+    const btnRetry = document.querySelector("#btn-retry");
+    textAbsoluteSnack.addEventListener("click",()=>{
+        if(textAbsoluteSnack.style.display == "block")
+        {
+            textAbsoluteSnack.style.display = "none";
+        }
+        else{
+            textAbsoluteSnack.style.display = "block";
+        }
+    })
+
+    btnRetry.addEventListener("click",()=>{
+        if(btnRetry.style.display == "block")
+        {
+            btnRetry.style.display = "none";
+        }
+        else{
+            btnRetry.style.display = "block";
+        }
+    })
+
+</script>
 </body>
 </html>

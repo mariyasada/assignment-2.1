@@ -33,7 +33,7 @@
     <div class=" container container-btn mt-2">
         <p class="text-content ">Hello, How you doing?</p>
         <button class="btn btn-white">Hide</button>
-        <div class="badge badge-btn-right"><span>3</span></div>
+        <div class="badge badge-btn-right" id="badge-hide"><span>3</span></div>
     </div>
 
     <!-- badge with icon -->
@@ -44,5 +44,21 @@
     </div>
 
 </div>
+<script>
+   const hideBadge = document.querySelector("#badge-hide");
+   const hideBtn = document.querySelector(".btn-white");
+
+   hideBtn.addEventListener("click",()=>{
+       console.log("clicked");
+       if(hideBadge.style.display =="block")
+       {
+           hideBadge.style.display ="none";
+       }
+       else{
+        hideBadge.style.display ="block";   
+       }
+   })
+
+</script>
 </body>
 </html>
