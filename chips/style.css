@@ -152,7 +152,7 @@ input{
 .chip-stack
 {
     height:400px;
-    width:200px;
+     max-width:200px;
     background-color: var(--color--gray);
     align-items: center;
 }
